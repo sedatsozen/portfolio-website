@@ -1,0 +1,85 @@
+.app__header {
+    padding-top: 215px;
+}
+
+.app__header-h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 70px;
+}
+
+.app__header-img img {
+    width: 100%;
+}
+
+.header__desc {
+    color: var(--color-golden);
+    font-size: 30px;
+    letter-spacing: 0.04em;
+}
+
+.app__wrapper-bg {
+    background: url('../../assets/frameOrnament.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.app__skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card-icon {
+    width: 300px;
+    height: 200px;
+    background-image: url("../../assets/redMarble.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon img{
+    object-fit: cover;
+    width: 310px;
+    height: 210px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-color: var(--color-golden);
+    text-underline-offset: 8px;
+}
+
+@media screen and (max-width: 1150px) {
+    .header__desc {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__header-h1 {
+        text-align: center;
+    }
+
+    .header__desc {
+        text-align: center;
+    }
+
+    .card h3, p {
+        text-align: center;
+    }
+}
